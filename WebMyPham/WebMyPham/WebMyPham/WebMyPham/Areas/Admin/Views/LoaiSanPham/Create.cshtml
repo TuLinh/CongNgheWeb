@@ -1,0 +1,68 @@
+﻿@model WebMyPham.Models.LoaiSanPham
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAD.cshtml";
+}
+
+<style>
+    p {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+    }
+</style>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <br />
+    <p>Thêm Thông Tin Loại Sản Phẩm</p>
+        <div class="form-horizontal col-xl-9 col-lg-10 col-md-12 col-sm-12">
+            <br />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.idloaisp, "Mã Loại SP", htmlAttributes: new { @class = "col-sm-3 control-label required" })
+                <div class="col-sm-9">
+                    @Html.EditorFor(model => model.idloaisp, new { htmlAttributes = new { @class = "form-control", @placeholder = "Mã Loại Sản Phẩm", @maxlength = "15", @required = "" } })
+                    @Html.ValidationMessageFor(model => model.idloaisp, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.tenloai, "Tên Loại Sản Phẩm", htmlAttributes: new { @class = "col-sm-3 control-label required" })
+                <div class="col-sm-9">
+                    @Html.EditorFor(model => model.tenloai, new { htmlAttributes = new { @class = "form-control", @placeholder = "Loại Sản Phẩm", @maxlength = "100", @required = "" } })
+                    @Html.ValidationMessageFor(model => model.tenloai, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.tieudengan, "Tiêu Đề", htmlAttributes: new { @class = "col-sm-3 control-label required" })
+                <div class="col-sm-9">
+                    @Html.EditorFor(model => model.tieudengan, new { htmlAttributes = new { @class = "form-control", @placeholder = "tieu-de-ngan", @maxlength = "250", @required = "" } })
+                    @Html.ValidationMessageFor(model => model.tieudengan, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            @*<div class="form-group">
+                @Html.LabelFor(model => model.TRANGTHAI, "Trạng Thái", htmlAttributes: new { @class = "col-sm-3 control-label required" })
+                <div class="col-sm-9">
+                    <div class="checkbox">
+                        @Html.EditorFor(model => model.TRANGTHAI)
+                        @Html.ValidationMessageFor(model => model.TRANGTHAI, "", new { @class = "text-danger", @placeholder = "Trạng Thái True || False", @maxlength = "10", @required = "" })
+                    </div>
+                </div>
+            </div>*@
+
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                    <input type="submit" value="Save" class="btn btn-default" />
+                    <a class="btn btn-warning" href="/Admin/LoaiSanPham/Index"><small><i class="fa fa-reply"></i></small> Trở về</a>
+                </div>
+            </div>
+        </div>
+}
+
+

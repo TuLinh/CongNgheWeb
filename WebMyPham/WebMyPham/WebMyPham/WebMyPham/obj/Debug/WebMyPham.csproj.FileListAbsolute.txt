@@ -1,0 +1,169 @@
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\WebMyPham.dll.config
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\WebMyPham.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\WebMyPham.pdb
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Antlr3.Runtime.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\EntityFramework.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\EntityFramework.SqlServer.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.Owin.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Google.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.Web.Infrastructure.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Newtonsoft.Json.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Owin.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\System.Web.Helpers.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\System.Web.Mvc.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\System.Web.Optimization.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\System.Web.Razor.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\System.Web.WebPages.Deployment.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\System.Web.WebPages.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\System.Web.WebPages.Razor.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\WebGrease.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\System.Web.Helpers.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\System.Web.Mvc.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\System.Web.Optimization.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\System.Web.Razor.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\System.Web.WebPages.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\System.Web.WebPages.Deployment.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\System.Web.WebPages.Razor.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Newtonsoft.Json.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Antlr3.Runtime.pdb
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\EntityFramework.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\EntityFramework.SqlServer.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.Owin.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Google.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\obj\Debug\WebMyPham.csprojResolveAssemblyReference.cache
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\obj\Debug\WebMyPham.dll
+D:\Kỳ 6\CongNgheWeb\WebMyPham\WebMyPham\obj\Debug\WebMyPham.pdb
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\obj\Debug\WebMyPham.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\obj\Debug\WebMyPham.pdb
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\WebMyPham.dll.config
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\WebMyPham.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\WebMyPham.pdb
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\EntityFramework.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Owin.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\WebGrease.dll
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.Optimization.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Antlr3.Runtime.pdb
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\EntityFramework.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Administrator\Desktop\WebMyPham\WebMyPham\WebMyPham\obj\Debug\WebMyPham.csprojResolveAssemblyReference.cache
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\WebMyPham.dll.config
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\WebMyPham.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\WebMyPham.pdb
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Antlr3.Runtime.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\EntityFramework.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\EntityFramework.SqlServer.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.AspNet.Identity.Core.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Cookies.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Facebook.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Google.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.OAuth.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Twitter.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Web.Infrastructure.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Newtonsoft.Json.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Owin.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\PagedList.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\PagedList.Mvc.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.Helpers.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.Mvc.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.Optimization.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.Razor.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.WebPages.Deployment.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.WebPages.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.WebPages.Razor.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\WebGrease.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\EntityFramework.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\EntityFramework.SqlServer.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\PagedList.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\PagedList.Mvc.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.Helpers.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.Mvc.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.Optimization.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.Razor.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.WebPages.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.WebPages.Deployment.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\System.Web.WebPages.Razor.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Newtonsoft.Json.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Antlr3.Runtime.pdb
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.AspNet.Identity.Core.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Facebook.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Cookies.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.OAuth.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Google.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.Twitter.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\obj\Debug\WebMyPham.dll
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\obj\Debug\WebMyPham.pdb
+D:\WebMyPham\WebMyPham\WebMyPham\WebMyPham\obj\Debug\WebMyPham.csprojResolveAssemblyReference.cache

@@ -1,0 +1,59 @@
+﻿@model WebMyPham.Models.LoaiSanPham
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAD.cshtml";
+}
+<style>
+    p {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+    }
+</style>
+
+<br />
+<p>Thông Tin CHi tiết Loại Sản Phẩm</p>
+<div class="form-horizontal col-xl-9 col-lg-10 col-md-12 col-sm-12 ">
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(model => model.idloaisp, "Mã Loại SP", htmlAttributes: new { @class = "col-sm-3 control-label required" })
+        <div class="col-sm-9">
+            @Html.EditorFor(model => model.idloaisp, new { htmlAttributes = new { @class = "form-control", @disabled = "true", @placeholder = "Mã Loại Sản Phẩm", @maxlength = "100", @required = "" } })
+            @Html.ValidationMessageFor(model => model.idloaisp, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.tenloai, "Tên Loại Sản Phẩm", htmlAttributes: new { @class = "col-sm-3 control-label required" })
+        <div class="col-sm-9">
+            @Html.EditorFor(model => model.tenloai, new { htmlAttributes = new { @class = "form-control", @disabled = "true", @placeholder = "Loại Sản Phẩm", @maxlength = "100", @required = "" } })
+            @Html.ValidationMessageFor(model => model.tenloai, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.tieudengan, "Tiêu Đề", htmlAttributes: new { @class = "col-sm-3 control-label required" })
+        <div class="col-sm-9">
+            @Html.EditorFor(model => model.tieudengan, new { htmlAttributes = new { @class = "form-control ", @disabled = "true", @placeholder = "tieu-de-ngan", @maxlength = "250", @required = "" } })
+            @Html.ValidationMessageFor(model => model.tieudengan, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    @*<div class="form-group">
+        @Html.LabelFor(model => model.TRANGTHAI, "Trạng Thái", htmlAttributes: new { @class = "col-sm-3 control-label required" })
+        <div class="col-sm-9">
+            <div class="checkbox">
+                @Html.EditorFor(model => model.TRANGTHAI)
+                @Html.ValidationMessageFor(model => model.TRANGTHAI, "", new { @class = "text-danger ", @disabled = "true", @placeholder = "Trạng Thái True || False", @maxlength = "10", @required = "" })
+            </div>
+        </div>*@
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+            <a class="btn btn-primary" href="/Admin/LoaiSanPham/Edit/@Model.idloaisp" data-id="@Model.idloaisp"<small><i class="fa fa-edit"></i></small>Sửa Thông Tin</a>
+            <a class="btn btn-warning" href="/Admin/LoaiSanPham/Index"><small><i class="fa fa-reply"></i></small> Trở về</a>
+        </div>
+    </div>
+</div>
+

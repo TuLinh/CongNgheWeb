@@ -1,0 +1,59 @@
+﻿@model IEnumerable<WebMyPham.Models.LoaiSanPham>
+
+@{
+    ViewBag.Title = "Quản Trị Danh Mục";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAD.cshtml";
+}
+
+<div id="main">
+    <ol class="breadcrumb">
+        <li><a href="/Admin/HomeAd/Index"><i class="fa fa-home"></i> Trang quản trị</a></li>
+        <li class="active"><a href="/Admin/LoaiSanPham/Index">Loại sản phẩm</a></li>
+    </ol>
+    <div class="col-xs-12">
+        <form id="post_form" method="post" action="" role="form">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <a href="/Admin/LoaiSanPham/Create" class="btn btn-submit"><small><i class="fa fa-plus"></i></small> Thêm mới</a>
+                    <div class="btn-group pull-right hidden-xs" id="div-search">
+                        <input id="search" name="search" type="text" value="" class="form-control" placeholder="Tìm kiếm">
+                        <span class="fa fa-search"></span>
+                    </div>
+                </div>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th class="hidden-xs">MÃ</th>
+                            <th>Tên Loại Sản Phẩm</th>
+                            <th class="hidden-xs" style="text-align: center;">Tiêu Đề Ngắn</th>
+                            <th style="text-align: center;">TT</th>
+                            <th>Tình trạng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var dm in Model)
+                        {
+                            <tr>
+                                <td class="hidden-xs">@dm.idloaisp</td>
+                                <td>
+                                    <a href="/Admin/LoaiSanPham/Details/@dm.idloaisp">@dm.tenloai</a>
+                                </td>
+                                <td class="hidden-xs" style="text-align: center;">@dm.tieudengan</td>
+                                <td style="text-align: center;">
+                                    <a href="/Admin/LoaiSanPham/Details/@dm.idloaisp"><i class="fa fa-info" data-toggle="tooltip" data-placement="top" title="Chi Tiết Loại Sản Phẩm"></i></a>
+                                    <a href="/Admin/Views/LoaiSanPham/Edit/@dm.idloaisp"><i class="fa fa-edit" data-toggle="tooltip" data-placement="top" title="Sửa Loại Sản Phẩm"></i></a>
+                                    <a href="/Admin/LoaiSanPham/Delete/@dm.idloaisp"><i class="fa fa-trash-o" data-toggle="tooltip" data-placement="top" title="Xóa Loại Sản Phẩm"></i></a>
+                                </td>
+                                @*<td style="color: #1d9977">@dm.TRANGTHAI</td>*@
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <p><strong><i class="fa fa-bookmark"></i>Ghi chú: </strong></p>
+                <p class="note-items"> <strong style="color: #1d9977">True</strong> Hiển thị với người dùng.</p>
+                <p class="note-items"> <strong style="color: #1d9977">False</strong> Ẩn với người dùng</p>
+            </div>
+        </form>
+    </div>
+</div>
+<!--END #main-->

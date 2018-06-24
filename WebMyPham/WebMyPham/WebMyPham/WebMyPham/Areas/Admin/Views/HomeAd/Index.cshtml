@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Trang Chủ Quản Trị";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAD.cshtml";
+}
+
+<div id="main">
+    <!--Phần chứa nội dung chính-->
+    <ol class="breadcrumb">
+        <li><a href="Index.cshtml"><i class="fa fa-home"></i> Trang quản trị</a></li>
+    </ol>
+    <div class="col-xs-12">
+        <div class="menu">
+            <a href="/Admin/HomeAd/Index" class="col-md-2 col-sm-3 col-xs-3">
+                <i class="fa fa-home"></i><br> <span>Trang quản trị</span>
+            </a>
+            <a href="~/Admin/SanPhamAd/Index" class="col-md-2 col-sm-3 col-xs-3">
+                <i class="fa fa-fire"></i><br> <span>Sản phẩm</span>
+            </a>
+            <a href="~/Admin/LoaiSanPham/Index" class="col-md-2 col-sm-3 col-xs-3">
+                <i class="fa fa-bars"></i><br> <span>Loại sản phẩm</span>
+            </a>
+             <a href="/Admin/DonHang/Index" class="col-md-2 col-sm-3 col-xs-3">
+                <i class="fa fa-shopping-cart"></i><br> <span>Đơn Hàng</span>
+            </a>
+            <a href="/Admin/KhuyenMai/Index" class="col-md-2 col-sm-3 col-xs-3">
+                <i class="fa fa-credit-card"></i><br> <span>Khuyễn Mãi</span>
+            </a>
+            <a href="/Admin/Sliders/Index" class="col-md-2 col-sm-3 col-xs-3">
+                <i class="fa fa-picture-o"></i><br> <span>Slider</span>
+            </a>
+            <a href="/Admin/TaiKhoan/Index" class="col-md-2 col-sm-3 col-xs-3">
+                <i class="fa fa-user"></i><br> <span>Tài khoản</span>
+            </a>
+        </div>
+    </div>
+</div>
+

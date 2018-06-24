@@ -1,0 +1,16 @@
+﻿@using WebMyPham.Models
+@model IEnumerable<LoaiSanPham>
+
+
+<div class="well well-small">
+    <ul class="nav nav-list">
+        @foreach (var p in Model)
+        {
+
+            <li><a href="/SanPham/Category?Category_id=@p.idloaisp"><span class="icon-chevron-right"></span>@p.tenloai</a></li>
+        }
+
+    </ul>
+</div>
+
+<a href="~/Views/Home/About.cshtml">~/Views/Home/About.cshtml</a>

@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Category";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using WebMyPham.Models
+@using PagedList.Mvc;
+@model List<SanPham>
+
+<div class="row-fluid">
+
+    <div class="well well-small">
+        <ul class="thumbnails">
+            @foreach (var p in Model)
+            {
+                <li class="span4">
+                    <div class="thumbnail">
+                        <a href="product_details.html" class="overlay"></a>
+                        <a class="zoomTool" href="product_details.html" title="add to cart"><span class="icon-search"></span> Xem nhanh</a>
+                        <a href="product_details.html"><img src="~/Images/@p.hinhanh" alt=""></a>
+                        <div class="caption cntr">
+                            <p>@p.tensp</p>
+                            <p><strong> @p.giaban</strong></p>
+                            <button type="button" title="Add to Cart" class="btn btn-default add-to-cart" data-id="@p.idsp">
+                                <span>Thêm vào giỏ hàng</span>
+                            </button>
+
+                            <br class="clr">
+                        </div>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+@*Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber )/ @Model.PageCount
+@Html.PagedListPager(Model, Page => Url.Action("Category", new { Page = Page }));*@

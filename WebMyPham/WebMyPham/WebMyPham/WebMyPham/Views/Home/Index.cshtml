@@ -1,0 +1,69 @@
+﻿@model IEnumerable<WebMyPham.Models.SanPham>
+@using WebMyPham.Models;
+@{
+    
+    ViewBag.Title = "Home Page";
+    //lay ra danh sach cac loai SP;
+    var LoaiSP = (List<LoaiSanPham>)ViewData["LoaiSanPhams"];
+}
+<div class="row-fluid">
+     
+     <div class="well well-small">
+        <ul class="thumbnails">
+            @foreach (var item in Model)
+            {
+                <li class="span4">
+                    <div class="thumbnail">
+                        <a href="product_details.html" class="overlay"></a>
+                        <a class="zoomTool" href="product_details.html" title="add to cdk art"><span class="icon-search"></span> Xem nhanh</a>
+                        <a href="product_details.html"><img src="~/Images/@item.hinhanh" alt=""></a>
+                        <div class="caption">
+                            <p>@item.tensp</p>
+                            <p><strong> @item.giaban</strong></p>
+                            <button type="button" title="Add to Cart" class="btn btn-default add-to-cart" data-id="@item.idsp">
+                                <span>Add to Cart</span>
+                            </button>
+                            <div class="actionList">
+                                <a class="pull-left" href="#">Add to Wish List </a>
+                                <a class="pull-left" href="#"> Add to Compare </a>
+                            </div>
+                            <br class="clr">
+                        </div>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+@*@section ["~/Views/SanPham/Index.cshtml"];
+
+@Session["cart"]
+    @Html.Action("ViewCount");*@
+
+@section scripts{
+    <script>
+        $(function () {
+            $(".add-to-cart").click(function () {
+                pid = $(this).attr("data-id");
+                $.ajax({
+                    url: "/Cart/Add",
+                    data: { id: pid },
+                    success: function (response) {
+                        $("#nn-cart-count").html(response.Count);
+                        $("#nn-cart-total").html(response.Total);
+                    }
+                });
+
+                // hieu ung bay vao gio
+                cssfly = ".fly-effect {background:url(?);background-size:100% 100%;}";
+                src = $("#i" + pid).attr("src");
+                newcssfly = cssfly.replace("?", src);
+                $("#cart-fly").html(newcssfly);
+
+                options = { to: "#nn-cart-image", className: "fly-effect" };
+                $("#i" + pid).effect("transfer", options, 500, function () { });
+            });
+        });
+    </script>
+}
+
