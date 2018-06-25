@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WebMyPham.Models.SanPham>
+﻿@model PagedList.PagedList<WebMyPham.Models.SanPham>
 @using WebMyPham.Models;
 @{
     
@@ -6,6 +6,7 @@
     //lay ra danh sach cac loai SP;
     var LoaiSP = (List<LoaiSanPham>)ViewData["LoaiSanPhams"];
 }
+@using PagedList.Mvc;
 <div class="row-fluid">
      
      <div class="well well-small">
@@ -21,13 +22,9 @@
                             <p>@item.tensp</p>
                             <p><strong> @item.giaban</strong></p>
                             <button type="button" title="Add to Cart" class="btn btn-default add-to-cart" data-id="@item.idsp">
-                                <span>Add to Cart</span>
+                                <span>Thêm vào giỏ hàng</span>
                             </button>
-                            <div class="actionList">
-                                <a class="pull-left" href="#">Add to Wish List </a>
-                                <a class="pull-left" href="#"> Add to Compare </a>
-                            </div>
-                            <br class="clr">
+                            @*<br class="clr">*@
                         </div>
                     </div>
                 </li>
@@ -49,6 +46,7 @@
                     url: "/Cart/Add",
                     data: { id: pid },
                     success: function (response) {
+                        alert("ban da them vao gio hang thanh cong");
                         $("#nn-cart-count").html(response.Count);
                         $("#nn-cart-total").html(response.Total);
                     }
@@ -67,3 +65,13 @@
     </script>
 }
 
+Trang @(Model.PageCount <Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+<div>
+    <ul>
+        <li>
+            <a>
+                @Html.PagedListPager(Model, Page => Url.Action("Index", new { Page = Page }))
+            </a>
+        </li>
+    </ul>
+</div>

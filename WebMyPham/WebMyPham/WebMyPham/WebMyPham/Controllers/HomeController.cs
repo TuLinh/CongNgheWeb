@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using WebMyPham.Models;
+using PagedList;
+using PagedList.Mvc;
 
 
 
@@ -12,11 +14,14 @@ namespace WebMyPham.Controllers
     public class HomeController : Controller
     {
         WebMyPhamContent db = new WebMyPhamContent();
-        public ActionResult Index()
+        public ActionResult Index(int? page)
         {
+            int pageSize = 2;
+            int pageNumber = (page ?? 1);
+            
             var category = db.LoaiSanPhams.ToList();
             ViewData["LoaiSanPhams"] = category;
-            var model = db.SanPhams;
+            var model = db.SanPhams.OrderBy(p => p.idloaisp).ToPagedList(pageNumber, pageSize);
             return View(model);
         }
 

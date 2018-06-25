@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="span4 alignR">
-                    <a href="~/Cart/Index">Giỏ hàng: 0 Sản phẩm - 0 VNĐ</a>
+                    <a href="~/Cart/Index">Giỏ hàng: @GioHang.Cart.Count Sản phẩm - @GioHang.Cart.Total VNĐ</a>
                 </div>
             </div>
         </header>
@@ -92,14 +92,14 @@
                             <li class="active"><a href="index.html">Trang chủ	</a></li>
                             <li class=""><a href="list-view.html">Khuyến mại</a></li>
                             <li class=""><a href="grid-view.html">Bài viết</a></li>
-                            <li class=""> <a href="~/Cart/Index">Giỏ hàng: 0 Sản phẩm - 0 VNĐ <img src="~/Images/giohang.jpg" style="width:30px;height:30px" /></a> </li>
+                            <li class=""> <a href="~/Cart/Index">Giỏ hàng: @GioHang.Cart.Count Sản phẩm - @GioHang.Cart.Total VNĐ <img src="~/Images/giohang.jpg" style="width:30px;height:30px" /></a> </li>
                         </ul>
                         <form action="#" class="navbar-search pull-left">
                             <input type="text" placeholder="Tìm kiếm" class="search-query span2">
                         </form>
                         <ul class="nav pull-right">
                             <li class="dropdown">
-                                <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="icon-lock"></span> Đăng nhập <b class="caret"></b></a>
+                                <a @*data-toggle="dropdown" class="dropdown-toggle"*@ href="http://localhost:47044/DangNhap/DangNhap">@*<span class="icon-lock"></span>*@ Đăng nhập @*<b class="caret"></b>*@</a>
                                 <div class="dropdown-menu">
                                     <form class="form-horizontal loginFrm">
                                         <div class="control-group">

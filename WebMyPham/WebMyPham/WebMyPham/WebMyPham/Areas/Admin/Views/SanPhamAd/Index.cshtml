@@ -1,0 +1,64 @@
+﻿@model IEnumerable<WebMyPham.Models.SanPham>
+@{
+    ViewBag.Title = "Quản trị Sản phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAD.cshtml";
+}
+<div id="main">
+    <ol class="breadcrumb">
+        <li><a href="/Admin/HomeAd/Index"><i class="fa fa-home"></i> Trang quản trị</a></li>
+        <li class="active"><a href="/Admin/SanPhamAd/Index"></a></li>
+    </ol>
+    <div class="col-xs-12">
+        <form id="post_form" method="post" action="" role="form">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <a href="/Admin/SanPhamAd/Create" class="btn btn-submit"><small><i class="fa fa-plus"></i></small> Thêm mới</a>
+                    <div class="btn-group pull-right hidden-xs" id="div-search">
+                        <input id="search" name="search" type="text" value="" class="form-control" placeholder="Tìm kiếm">
+                        <span class="fa fa-search"></span>
+                    </div>
+                </div>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th class="hidden-xs">Mã</th>
+                            <th>Sản phẩm</th>
+                            <th class="hidden-xs" style="text-align:center;">Hình Ảnh</th>
+                            @*<th class="hidden-sm hidden-xs" style="text-align: center;">Giá</th>*@
+                            @*<th class="hidden-sm hidden-xs">NSD</th>
+                            <th class="hidden-sm hidden-xs">Ngày Hot</th>*@
+                            <th class="hidden-xs">Giá bán</th>
+                            <th>Số lượng</th>
+                            <th>TT</th>
+                            <th>Trạng Thái</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var sp in Model)
+                        {
+                            <tr>
+                                <td class="hidden-xs">@sp.idsp</td>
+                                <td>
+                                    <a href="/Admin/SanPhamAd/Details/@sp.idsp">@sp.tensp</a>
+                                </td>
+                                <td class="hidden-xs" style="text-align:center;">
+                                    <img style="height: 30px;" src="~/Images/@sp.hinhanh" />
+                                </td>
+                                <td class="hidden-sm hidden-xs" style="text-align: center;">@sp.giaban.ToString("0,0")</td>
+                                
+                                <td class="hidden-xs">@sp.soluong</td>
+                                <td>
+                                    <a href="/Admin/SanPhamAd/Details/@sp.idsp"><i class="fa fa-info" data-toggle="tooltip" data-placement="top" title="Chi Tiết Sản Phẩm"></i></a>
+                                    <a href="/Admin/SanPhamAd/Edit/@sp.idsp"><i class="fa fa-edit" data-toggle="tooltip" data-placement="top" title="Sửa Sản Phẩm"></i></a>
+                                    <a href="/Admin/SanPhamAd/Delete/@sp.idsp"><i class="fa fa-trash-o" data-toggle="tooltip" data-placement="top" title="Xóa Sản Phẩm"></i></a>
+                                </td>
+                                <td>@sp.trangthai</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+</div>
+

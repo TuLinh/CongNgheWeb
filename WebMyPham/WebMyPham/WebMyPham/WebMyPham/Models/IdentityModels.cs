@@ -13,6 +13,8 @@ namespace WebMyPham.Models
         public DbSet<Permission> Permissions { get; set; }
 
         public System.Data.Entity.DbSet<WebMyPham.Models.KhachHang> KhachHangs { get; set; }
+
+        public System.Data.Entity.DbSet<WebMyPham.Models.NguoiDung> NguoiDungs { get; set; }
     }
 
     public class ApplicationUser : IdentityUser

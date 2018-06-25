@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using WebMyPham.Models;
+using System.Linq;
 
 namespace WebMyPham.Areas.Admin.Controllers
 {
@@ -17,7 +18,7 @@ namespace WebMyPham.Areas.Admin.Controllers
         public ActionResult Index()
         {
             var sanpham = db.SanPhams.Include(p => p.LoaiSanPham);
-            return View();
+            return View(sanpham.ToList());
         }
         //Get:Admin/SanPhamad/Detail/5
         public ActionResult Details(string id)
@@ -55,25 +56,17 @@ namespace WebMyPham.Areas.Admin.Controllers
                 if(ModelState.IsValid)
                 {
                     var filename = Path.GetFileName(Fileupload.FileName);
-                    var path = Path.Combine(Server.MapPath("~/Content/images"), filename);
-                    var filename_2 = Path.GetFileName(Fileupload_2.FileName);
-                    var path_2 = Path.Combine(Server.MapPath("~/Content/images"), filename);
+                    var path = Path.Combine(Server.MapPath("~/Images"), filename);
+                   
                     if (System.IO.File.Exists(path))
                     {
                         ViewBag.ThongBao = "Hình Ảnh đã tồn tại";
                     }
-                    else
-                     if (System.IO.File.Exists(path_2))
+                    else   
                     {
-                        ViewBag.ThongBao = "Hình Ảnh đã tồn tại";
+                        Fileupload.SaveAs(path);    
                     }
-
-                    else
-                    {
-                        Fileupload.SaveAs(path);
-                        Fileupload_2.SaveAs(path_2);
-                    }
-                    sanpham.idsp = "";
+                  //  sanpham.idsp = "";
                     sanpham.hinhanh = filename;
                     db.SanPhams.Add(sanpham);
                     db.SaveChanges();
@@ -84,7 +77,68 @@ namespace WebMyPham.Areas.Admin.Controllers
             ViewBag.idsp = new SelectList(db.LoaiSanPhams, "idsp", "tensp", sanpham.idsp);
             return View(sanpham);
         }
+        //get:Admin/SanPhamAd/Edit/5
+        public ActionResult Edit(string id)
+        {
+            if(id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            SanPham sanpham = db.SanPhams.Find(id);
+            if(sanpham == null)
+            {
+                return HttpNotFound();
+            }
+            ViewBag.idsp = new SelectList(db.LoaiSanPhams, "idsp", "tensp", sanpham.idsp);
+            return View(sanpham);
 
-        
+        }
+        //POST : Admin/SanPhamAd/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit ([Bind(Include ="idsp,tensp,idloaisp,mota,giaban,soluong,giamgia,hinhanh,trangthai")] SanPham sanpham)
+        {
+            if(ModelState.IsValid)
+            {
+                db.Entry(sanpham).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            ViewBag.idsp = new SelectList(db.LoaiSanPhams, "idsp", "tensp", sanpham.idsp);
+            return View(sanpham);
+        }
+        //get: Admin/SanPhamAd/Delete/5
+        public ActionResult Delete(string id)
+        {
+            if(id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            SanPham sanpham = db.SanPhams.Find(id);
+            if(sanpham == null)
+            {
+                return HttpNotFound();
+            }
+            return View(sanpham);
+        }
+        //Post : Admin/SanPhamAd/Delete/5
+        [HttpPost,ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed (string id)
+        {
+            SanPham sanpham = db.SanPhams.Find(id);
+            db.SanPhams.Remove(sanpham);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                db.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
     }
 }

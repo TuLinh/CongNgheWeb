@@ -1,0 +1,17 @@
+﻿@model WebMyPham.Models.NguoiDung
+
+@{
+    ViewBag.Title = "DangNhap";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    <span>Tai khoan</span><br/>
+    @Html.TextBox("txtTaiKhoan");
+    <br/>
+    <span>Mat khau</span><br/>
+    <input name="txtmatkhau" type="password" /><br/>
+    <input  type="submit" id="btnSubmit" /><br />
+}
+

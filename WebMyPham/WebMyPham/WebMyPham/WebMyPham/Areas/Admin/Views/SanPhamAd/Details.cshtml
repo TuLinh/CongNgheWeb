@@ -1,0 +1,57 @@
+﻿@model WebMyPham.Models.SanPham
+@{
+    ViewBag.Title = "Chi tiet san pham";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAD.cshtml";
+}
+<style>
+    .title_dt {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .CtSP {
+        padding-top: 1.5cm;
+        font-weight: bold;
+    }
+
+        .CtSP > p {
+            padding-left: 2em;
+            font-size: 15px;
+        }
+
+    .anh {
+        margin-left: 3cm;
+    }
+
+        .anh img {
+            padding-top: 1.5cm;
+            width: 100%;
+        }
+</style>
+
+<br />
+<p class="title_dt">Chi Tiết @Model.tensp</p>
+<br />
+<div class="form-horizontal col-xl-9 col-lg-10 col-md-12 col-sm-12">
+    <div class="col-md-4 float-left anh">
+        <img src="~/Images/@Model.hinhanh" />
+    </div>
+    <div class="col-md-6 float-right CtSP">
+        <p>Tên Sản Phẩm: @Model.tensp</p>
+        <p>Mã Sản Phẩm: @Model.idsp</p>
+        <p>Giá Sản Phẩm: @Model.giaban.ToString("0,0") VND</p>
+        <p>Chi Tiết Sản Phẩm: @Model.mota</p>
+        <p>SL Sản Phẩm: @Model.soluong</p>
+        <p>Tình Trạng Sản Phẩm: @Model.trangthai</p>
+        <div style="margin-left:2em;">
+            <a class="btn btn-primary" href="/Admin/SanPhamAd/Edit/@Model.idsp" data-id="@Model.idsp"<small><i class="fa fa-edit"></i></small>Sửa Thông Tin Sản Phẩm</a>
+            <a class="btn btn-warning" href="/Admin/SanPhamAd/Index"><small><i class="fa fa-reply"></i></small> Trở về</a>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <br />
+</div>
+
+
+

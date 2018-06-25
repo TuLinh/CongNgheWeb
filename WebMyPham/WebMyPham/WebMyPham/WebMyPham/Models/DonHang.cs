@@ -19,17 +19,17 @@ namespace WebMyPham.Models
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int iddonhang { get; set; }
 
-        public int? idKH { get; set; }
+        public int idKH { get; set; }
 
         [StringLength(10)]
         public string idsp { get; set; }
 
-        public int? soluong { get; set; }
+        public int soluong { get; set; }
 
         [StringLength(50)]
         public string mota { get; set; }
 
-        public bool? trangthai { get; set; }
+        public bool trangthai { get; set; }
 
         [StringLength(50)]
         public string kieuthanhtoan { get; set; }

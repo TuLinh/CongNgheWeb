@@ -1,0 +1,55 @@
+﻿@model IEnumerable<WebMyPham.Models.NguoiDung>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAD.cshtml";
+}
+
+<div id="main">
+    <ol class="breadcrumb">
+        <li><a href="/Admin/HomeAd/Index"><i class="fa fa-home"></i> Trang quản trị</a></li>
+        <li class="active"><a href="/Admin/TaiKhoan/Index">Tài khoản</a></li>
+    </ol>
+    <div class="col-xs-12">
+        <form id="admin-form" method="post" action="" role="form">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    <a href="new-user.html" class="btn btn-submit"><small><i class="fa fa-plus"></i></small> Thêm mới</a>
+                    <div class="btn-group pull-right hidden-xs" id="div-search">
+                        <input id="search" name="search" type="text" value="" class="form-control" placeholder="Tìm kiếm">
+                        <span class="fa fa-search"></span>
+                    </div>
+                </div>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            
+                            <th>Tên Đăng Nhập</th>
+                            <th class="hidden-xs" style="text-align: center">Mật Khẩu</th>
+                            <th class="hidden-sm hidden-xs" style="text-align: center">Quyền</th>
+                            <th>Sửa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var tk in Model)
+                        {
+                            <tr>
+                                
+                                <td>
+                                    @*<a href="#">@tk.username</a>*@
+                                    @tk.username
+                                </td>
+                                <td class="hidden-xs" style="text-align: center">@tk.password</td>
+                                <td class="hidden-sm hidden-xs" style="text-align: center">@tk.quyen</td>
+                                <td>
+                                    <a href="#"><i class="fa fa-info" data-toggle="tooltip" data-placement="top" title="Chi Tiết Tài Khoản"></i></a>
+                                    <a href="#"><i class="fa fa-edit" data-toggle="tooltip" data-placement="top" title="Sửa Tài Khoản"></i></a>
+                                    <a href="#"><i class="fa fa-trash-o" data-toggle="tooltip" data-placement="top" title="Xóa Tài Khoản"></i></a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+</div>
