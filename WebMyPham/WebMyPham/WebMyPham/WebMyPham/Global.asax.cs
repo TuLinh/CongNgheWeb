@@ -17,5 +17,11 @@ namespace WebMyPham
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+        protected void Sesstion_Start()
+        {
+            Session["userid"] = null;
+            Session["username"] = null;
+
+        }
     }
 }

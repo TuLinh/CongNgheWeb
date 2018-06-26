@@ -9,7 +9,7 @@
         <th>Ma sản phẩm</th>
         <th>Tên sản phẩm</th>
         <th>Giá bán</th>
-        <th>Số lượng</th>
+        <th>Thành tiền</th>
     
         <th></th>
     </tr>
@@ -18,18 +18,18 @@
         <tr>
             <td>@p.idsp</td>
             <td>@p.tensp</td>
-            <td>@Html.FormatValue(p.giaban, "{0:c}")</td>
-            <td>@Html.FormatValue(p.soluong, "{0:p}")</td>
-            <td><input class="quantity" value="@p.soluong" data-id="@p.idsp" size="3"></td>
-            <td id="@p.idsp">@Html.FormatValue(p.giaban * p.soluong * (1 - p.giamgia), "{0:c}")</td>
+            <td>@*@Html.FormatValue(p.giaban, "{0:c}")*@ @p.giaban<p>.000 VND</p></td>
+            @*<td>@Html.FormatValue(p.soluong, "{0:p}")</td>*@
+            @*<td><input class="quantity" value="@p.soluong" data-id="@p.idsp" size="3"></td>*@
+            <td id="@p.idsp">@(p.giaban * p.soluong * (1 - p.giamgia)) .000 VND</td>
             <td>
-                <img class="remove-from-cart" data-id="@p.idsp" src="~/Images/001.jpg" />
+                <img class="remove-from-cart" data-id="@p.idsp" src="~/Images/@p.hinhanh" />
             </td>
         </tr>
     }
     <tr>
-        <th colspan="5" style="text-align:right">Total:</th>
-        <th>@GioHang.Cart.Total</th>
+        <th colspan="5" style="text-align:center">Total:@GioHang.Cart.Total .000 VND</th>
+        @GioHang.Cart.Total
         <th></th>
     </tr>
 </table>

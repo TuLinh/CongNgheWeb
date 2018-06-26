@@ -19,16 +19,17 @@ namespace WebMyPham.Controllers
         [HttpPost]
         public ActionResult DangNhap(FormCollection f)
         {
-            string taikhoan = f["txtTaiKhoan"].ToString();
-            string matkhau = f.Get("txtmatkhau").ToString();
+            string taikhoan = f["username"].ToString();
+            string matkhau = f.Get("pass").ToString();
             NguoiDung nguoidung = db.NguoiDungs.SingleOrDefault(n => n.username == taikhoan && n.password == matkhau);
-            if(nguoidung != null)
+            if (nguoidung != null)
             {
                 ViewBag.ThongBao = "Chuc mung ban dang nhap thanh cong";
                 Session["TaiKhoan"] = nguoidung;
                 return RedirectToAction("Index", "Home");
             }
             return View();
+           
         }
     }
 }

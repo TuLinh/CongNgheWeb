@@ -59,12 +59,19 @@ namespace WebMyPham.Controllers
             return View(db.SanPhams);
         }
 
-        public ActionResult Detail(int id, string SupplierID)
+        public ActionResult Detail(string id, string SupplierID)
         {
-            var model = db.SanPhams.Find(id);
+            var model = new SANPHAMF().FinEntity(id);
+            ViewBag.SANPHAM = new SANPHAMF().DSSanPham.ToList();
+            ViewBag.DANHMUC = new LoaiSanPhamF().LoaiSanPhams.ToList();
+            ViewBag.Count = TempData["CountBag"];
+            TempData.Keep("CountBag");
+            return View(model);
 
+            var model1 = db.SanPhams.Find(id);
+            ViewBag.SanPham = new SanPham().ViewDetail(id);
             // Tăng số lần xem
-            // model.Views++;
+           // model.Views++;
             db.SaveChanges();
 
             // Lấy cookie cũ tên views
@@ -87,7 +94,7 @@ namespace WebMyPham.Controllers
             // Truy vấn háng đãn xem
             //ViewBag.Views = db.SanPhams
             //    .Where(p => keys.Contains(p.Id));
-            return View(model);
+            //return View(model);
         }
         public ActionResult Category(string Category_id, int? page)
         {

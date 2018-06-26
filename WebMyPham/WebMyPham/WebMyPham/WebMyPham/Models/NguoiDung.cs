@@ -21,12 +21,20 @@
         public string password { get; set; }
 
         public string quyen { get; set; }
-
-  
-
+        [StringLength(50)]
+        public string hoten { get; set; }
+        [StringLength(50)]
+        public string email { get; set; }
+        [StringLength(50)]
+        public string diachi { get; set; }
        
+        public int sdt  { get; set; }
 
-        
-       
+
+
+
+
+
+
     }
 }

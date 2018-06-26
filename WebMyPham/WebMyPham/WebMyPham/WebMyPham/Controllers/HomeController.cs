@@ -16,7 +16,7 @@ namespace WebMyPham.Controllers
         WebMyPhamContent db = new WebMyPhamContent();
         public ActionResult Index(int? page)
         {
-            int pageSize = 2;
+            int pageSize = 6;
             int pageNumber = (page ?? 1);
             
             var category = db.LoaiSanPhams.ToList();

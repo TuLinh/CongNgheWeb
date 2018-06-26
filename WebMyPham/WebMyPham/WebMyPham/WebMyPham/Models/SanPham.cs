@@ -11,6 +11,7 @@ namespace WebMyPham.Models
     [Table("SanPham")]
     public partial class SanPham
     {
+        WebMyPhamContent db = null;
         private WebMyPhamContent context = null;
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public SanPham()
@@ -55,6 +56,12 @@ namespace WebMyPham.Models
         {
             var list = context.Database.SqlQuery<SanPham>("sp").ToList();
             return list;
+        }
+
+
+        public SanPham ViewDetail(string id)
+        {
+            return db.SanPhams.Find(id);
         }
         
 
