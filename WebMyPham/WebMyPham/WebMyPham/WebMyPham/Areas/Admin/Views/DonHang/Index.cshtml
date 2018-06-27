@@ -26,9 +26,13 @@
                             <th class="hidden-xs">Mã</th>
                             <th>Tên Khách Hàng</th>
                             <th class="hidden-xs" style="text-align: center">Điện Thoại</th>
-                            <th class="hidden-sm hidden-xs" style="text-align: center">Email</th>
-                            <th>Sửa</th>
+                            <th class="hidden-sm hidden-xs" style="text-align: center">Địa chỉ</th>
+                            
+                            <th>Kiểu thanh toán</th>
+                            @*<th>Ngày xuất đơn</th>*@
                             <th>Trạng Thái</th>
+                            <th>Sửa</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
@@ -41,12 +45,15 @@
                                 </td>
                                 <td class="hidden-xs" style="text-align: center">@dh.KhachHang.sdt</td>
                                 <td class="hidden-sm hidden-xs" style="text-align: center">@dh.KhachHang.diachi</td>
+                                
+                                <td class="hidden-sm hidden-xs" style="text-align: center">@dh.kieuthanhtoan</td>
+                                @*<td class="hidden-sm hidden-xs" style="text-align: center">@dh.ngayxuat</td>*@
+                                <td>@dh.trangthai</td>
                                 <td>
                                     <a href="/Admin/DonHang/Details/@dh.iddonhang"><i class="fa fa-info" data-toggle="tooltip" data-placement="top" title="Chi Tiết Đơn Hàng"></i></a>
                                     <a href="/Admin/DonHang/Edit/@dh.iddonhang"><i class="fa fa-edit" data-toggle="tooltip" data-placement="top" title="Sửa Đơn Hàng"></i></a>
                                     <a href="/Admin/DonHang/Delete/@dh.iddonhang"><i class="fa fa-trash-o" data-toggle="tooltip" data-placement="top" title="Xóa Đơn Hàng"></i></a>
                                 </td>
-                                <td>@dh.trangthai</td>
                             </tr>
                         }
                     </tbody>

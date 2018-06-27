@@ -1,0 +1,74 @@
+﻿@model PagedList.PagedList<WebMyPham.Models.SanPham>
+@using WebMyPham.Models;
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+    var LoaiSP = (List<LoaiSanPham>)ViewData["LoaiSanPhams"];
+}
+
+@using PagedList.Mvc;
+<div class="row-fluid">
+
+    <div class="well well-small">
+        <ul class="thumbnails">
+            @foreach (var item in Model)
+            {
+                <li class="span4">
+                    <div class="thumbnail">
+                        @*<a href="product_details.html" class="overlay"></a>*@
+                        <a class="zoomTool" href="/SanPham/Detail/@item.idsp" title="add to cdk art"><span class="icon-search"></span> Xem nhanh</a>
+                        <a href="product_details.html"><img src="~/Images/@item.hinhanh" alt=""></a>
+                        <div class="caption">
+                            <p>@item.tensp</p>
+                            <p><strong> @item.giaban</strong></p>
+                            <button type="button" title="Add to Cart" class="btn btn-default add-to-cart" data-id="@item.idsp">
+                                <span>Thêm vào giỏ hàng</span>
+                            </button>
+                            @*<br class="clr">*@
+                        </div>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+@section scripts{
+    <script>
+        $(function () {
+            $(".add-to-cart").click(function () {
+                pid = $(this).attr("data-id");
+                $.ajax({
+                    url: "/Cart/Add",
+                    data: { id: pid },
+                    success: function (response) {
+                        alert("ban da them vao gio hang thanh cong");
+                        $("#nn-cart-count").html(response.Count);
+                        $("#nn-cart-total").html(response.Total);
+                    }
+                });
+
+                // hieu ung bay vao gio
+                cssfly = ".fly-effect {background:url(?);background-size:100% 100%;}";
+                src = $("#i" + pid).attr("src");
+                newcssfly = cssfly.replace("?", src);
+                $("#cart-fly").html(newcssfly);
+
+                options = { to: "#nn-cart-image", className: "fly-effect" };
+                $("#i" + pid).effect("transfer", options, 500, function () { });
+            });
+        });
+    </script>
+}
+
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+<div>
+    <ul>
+        <li>
+            <a>
+                @Html.PagedListPager(Model, Page => Url.Action("Index", new { Page = Page }))
+            </a>
+        </li>
+    </ul>
+</div>
+
+

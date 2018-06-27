@@ -27,8 +27,8 @@
         public string email { get; set; }
         [StringLength(50)]
         public string diachi { get; set; }
-       
-        public int sdt  { get; set; }
+        [StringLength(50)]
+        public string sdt  { get; set; }
 
 
 

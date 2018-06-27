@@ -24,27 +24,27 @@
                     <thead>
                         <tr>
                             <th class="hidden-xs">MÃ</th>
-                            <th>Tên Loại Sản Phẩm</th>
+                            <th>Tê</th>
                             <th class="hidden-xs" style="text-align: center;">Tiêu Đề Ngắn</th>
                             <th style="text-align: center;">TT</th>
-                            <th>Tình trạng</th>
+                            @*<th>Tình trạng</th>*@
                         </tr>
                     </thead>
                     <tbody>
                         @foreach (var dm in Model)
                         {
                             <tr>
-                                <td class="hidden-xs">@dm.idloaisp</td>
+                                <td class="hidden-xs">heuwthue</td>
                                 <td>
                                     <a href="/Admin/LoaiSanPham/Details/@dm.idloaisp">@dm.tenloai</a>
                                 </td>
                                 <td class="hidden-xs" style="text-align: center;">@dm.tieudengan</td>
                                 <td style="text-align: center;">
                                     <a href="/Admin/LoaiSanPham/Details/@dm.idloaisp"><i class="fa fa-info" data-toggle="tooltip" data-placement="top" title="Chi Tiết Loại Sản Phẩm"></i></a>
-                                    <a href="/Admin/Views/LoaiSanPham/Edit/@dm.idloaisp"><i class="fa fa-edit" data-toggle="tooltip" data-placement="top" title="Sửa Loại Sản Phẩm"></i></a>
+                                    <a href="/Admin/LoaiSanPham/Edit/@dm.idloaisp"><i class="fa fa-edit" data-toggle="tooltip" data-placement="top" title="Sửa Loại Sản Phẩm"></i></a>
                                     <a href="/Admin/LoaiSanPham/Delete/@dm.idloaisp"><i class="fa fa-trash-o" data-toggle="tooltip" data-placement="top" title="Xóa Loại Sản Phẩm"></i></a>
                                 </td>
-                                @*<td style="color: #1d9977">@dm.TRANGTHAI</td>*@
+                                @*<td style="color: #1d9977">@dm</td>*@
                             </tr>
                         }
                     </tbody>

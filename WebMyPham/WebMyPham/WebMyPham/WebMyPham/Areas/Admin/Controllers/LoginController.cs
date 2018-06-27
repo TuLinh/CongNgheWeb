@@ -55,6 +55,20 @@ namespace WebMyPham.Areas.Admin.Controllers
                 }
             }
             return View();
+
+            //string username = f["email"].ToString();
+            //string password = f.Get("password").ToString();
+            //NguoiDung nd = db.NguoiDungs.SingleOrDefault(n => n.username == username && n.password == password);
+            //if (nd != null)
+            //{
+            //    ViewBag.ThongBao = "Chúc mừng bạn đăng nhập thành công !";
+            //    Session["TaiKhoan"] = nd;
+            //    //ViewBag.TenTK = kh.HoTen;
+            //    return RedirectToAction("Index", "Home");
+
+            //}
+            //ViewBag.ThongBao = "Tên tài khoản hoặc mật khẩu không đúng!";
+            //return View();
         }
     }
 }
